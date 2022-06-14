@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    background-color: #eefdf8;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+h1{
+    color: #ff7b00;
+    font-size: 3em;
+}
+
+form{
+    margin-top: 20px;
+}
+
+#campoAddTarefa{
+    border: 1px solid #00e1ff;
+    border-radius: 5px;
+    width: 250px;
+    height: 29px;
+    font-size: 1em;
+    text-align: center;
+}
+
+#campoAddTarefa::placeholder{
+color: #00e1ff;
+}
+
+#add{
+    border: 1px solid #00e1ff;
+    background-color: #d9fbff;
+    color: #00e1ff;
+    padding: 5px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-box-shadow: 1px 1px 5px 0px #0000002f; 
+box-shadow: 1px 1px 5px 0px #00000038;
+}
+
+#add:hover{
+    background-color: #effdff;
+}
+
+#tarefas{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+:checked + label{
+    text-decoration: line-through;
+}
